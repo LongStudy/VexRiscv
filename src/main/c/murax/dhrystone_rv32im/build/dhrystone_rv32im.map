@@ -1,0 +1,467 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+                              build/src/dhry_1.o (memcpy)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-strcmp.o)
+                              build/src/dhry_2.o (strcmp)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+                              build/src/dhry_1.o (__divdf3)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                              build/src/dhry_1.o (__muldf3)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+                              build/src/dhry_1.o (__divsf3)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+                              build/src/dhry_1.o (__mulsf3)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+                              build/src/dhry_1.o (__subsf3)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+                              build/src/dhry_1.o (__fixsfsi)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+                              build/src/dhry_1.o (__floatsisf)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                              build/src/dhry_1.o (__extendsfdf2)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                              build/src/dhry_1.o (__truncdfsf2)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                              /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o) (__clzsi2)
+/opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+                              /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o) (__clz_tab)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onChipRam        0x0000000080000000 0x0000000000040000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/src/main.o
+LOAD build/src/dhry_1.o
+LOAD build/src/dhry_2.o
+LOAD build/src/crt.o
+LOAD build/src/stdlib.o
+LOAD /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a
+LOAD /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a
+LOAD /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a
+                0x0000000000000400                _stack_size = DEFINED (_stack_size)?_stack_size:0x400
+                0x0000000000000000                _heap_size = DEFINED (_heap_size)?_heap_size:0x0
+
+.vector         0x0000000080000000      0x130
+ *crt.o(.text)
+ .text          0x0000000080000000      0x130 build/src/crt.o
+                0x0000000080000000                crtStart
+                0x0000000080000020                trap_entry
+
+.memory         0x0000000080000130     0x2b4c
+ *(.text)
+ .text          0x0000000080000130       0x4c build/src/main.o
+                0x000000008000016c                irqCallback
+                0x0000000080000170                clock
+ .text          0x000000008000017c      0x934 build/src/dhry_1.o
+                0x000000008000017c                Proc_2
+                0x00000000800001a4                Proc_3
+                0x00000000800001c8                Proc_1
+                0x0000000080000324                Proc_4
+                0x0000000080000348                Proc_5
+                0x0000000080000358                main2
+ .text          0x0000000080000ab0      0x1a8 build/src/dhry_2.o
+                0x0000000080000ab0                Proc_7
+                0x0000000080000ac0                Proc_8
+                0x0000000080000b24                Func_1
+                0x0000000080000b44                Func_2
+                0x0000000080000ba4                Func_3
+                0x0000000080000bb0                Proc_6
+ .text          0x0000000080000c58      0x278 build/src/stdlib.o
+                0x0000000080000c9c                putchar
+                0x0000000080000d60                malloc
+                0x0000000080000d88                printf
+                0x0000000080000e8c                puts
+ .text          0x0000000080000ed0      0x11c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+                0x0000000080000ed0                memcpy
+ .text          0x0000000080000fec      0x17c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-strcmp.o)
+                0x0000000080000fec                strcmp
+ .text          0x0000000080001168      0x6cc /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+                0x0000000080001168                __divdf3
+ .text          0x0000000080001834      0x5bc /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                0x0000000080001834                __muldf3
+ .text          0x0000000080001df0      0x328 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+                0x0000000080001df0                __divsf3
+ .text          0x0000000080002118      0x2f8 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+                0x0000000080002118                __mulsf3
+ .text          0x0000000080002410      0x44c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+                0x0000000080002410                __subsf3
+ .text          0x000000008000285c       0x70 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+                0x000000008000285c                __fixsfsi
+ .text          0x00000000800028cc      0x108 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+                0x00000000800028cc                __floatsisf
+ .text          0x00000000800029d4       0xdc /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                0x00000000800029d4                __extendsfdf2
+ .text          0x0000000080002ab0      0x180 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                0x0000000080002ab0                __truncdfsf2
+ .text          0x0000000080002c30       0x4c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                0x0000000080002c30                __clzsi2
+ .text          0x0000000080002c7c        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+                0x0000000080002c7c                end = .
+
+.text.startup   0x0000000080002c7c       0x64
+ .text.startup  0x0000000080002c7c       0x64 build/src/main.o
+                0x0000000080002c7c                main
+
+.rodata         0x0000000080002ce0      0x7b8
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x0000000080002ce0      0x5c8 build/src/dhry_1.o
+                                        0x5c7 (size before relaxing)
+ .rodata        0x00000000800032a8       0x3c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .rodata        0x00000000800032e4       0x3c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .rodata        0x0000000080003320       0x3c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .rodata        0x000000008000335c       0x3c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .rodata        0x0000000080003398      0x100 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+                0x0000000080003398                __clz_tab
+ *(.gnu.linkonce.r.*)
+
+.rela.dyn       0x0000000080003498        0x0
+ .rela.text     0x0000000080003498        0x0 build/src/main.o
+
+.ctors          0x0000000080003498        0x0
+                0x0000000080003498                . = ALIGN (0x4)
+                0x0000000080003498                _ctors_start = .
+ *(.init_array*)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+                0x0000000080003498                . = ALIGN (0x4)
+                0x0000000080003498                _ctors_end = .
+
+.data           0x0000000080003498       0x1c
+ *(.rdata)
+ *(.rodata .rodata.*)
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ .data          0x0000000080003498        0x0 build/src/main.o
+ .data          0x0000000080003498        0x0 build/src/dhry_1.o
+ .data          0x0000000080003498        0x0 build/src/dhry_2.o
+ .data          0x0000000080003498        0x0 build/src/crt.o
+ .data          0x0000000080003498        0x0 build/src/stdlib.o
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-strcmp.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .data          0x0000000080003498        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+ *(.gnu.linkonce.d.*)
+                0x0000000080003498                . = ALIGN (0x8)
+                0x0000000080003c98                PROVIDE (__global_pointer$ = (. + 0x800))
+ *(.sdata .sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x0000000080003498                . = ALIGN (0x8)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ .srodata.cst8  0x0000000080003498       0x10 build/src/dhry_1.o
+ *(.srodata.cst4)
+ .srodata.cst4  0x00000000800034a8        0xc build/src/dhry_1.o
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+
+.bss            0x00000000800034b4     0x2c08
+                0x00000000800034b4                . = ALIGN (0x4)
+                0x00000000800034b4                _bss_start = .
+ *(.sbss*)
+ .sbss          0x00000000800034b4       0x2c build/src/dhry_1.o
+                0x00000000800034b4                Dhrystones_Per_Second
+                0x00000000800034b8                Microseconds
+                0x00000000800034bc                User_Time
+                0x00000000800034c0                End_Time
+                0x00000000800034c4                Begin_Time
+                0x00000000800034c8                Reg
+                0x00000000800034cc                Ch_2_Glob
+                0x00000000800034cd                Ch_1_Glob
+                0x00000000800034d0                Bool_Glob
+                0x00000000800034d4                Int_Glob
+                0x00000000800034d8                Next_Ptr_Glob
+                0x00000000800034dc                Ptr_Glob
+ .sbss          0x00000000800034e0        0x4 build/src/stdlib.o
+                0x00000000800034e0                heap_memory_used
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ .bss           0x00000000800034e4        0x0 build/src/main.o
+ .bss           0x00000000800034e4     0x27d8 build/src/dhry_1.o
+                0x00000000800034e4                Arr_1_Glob
+                0x00000000800035ac                Arr_2_Glob
+ .bss           0x0000000080005cbc        0x0 build/src/dhry_2.o
+ .bss           0x0000000080005cbc        0x0 build/src/crt.o
+ .bss           0x0000000080005cbc      0x400 build/src/stdlib.o
+                0x0000000080005cbc                heap_memory
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-strcmp.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .bss           0x00000000800060bc        0x0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000800060bc                . = ALIGN (0x4)
+                0x00000000800060bc                _bss_end = .
+
+.noinit         0x00000000800060bc        0x0
+                0x00000000800060bc                . = ALIGN (0x4)
+ *(.noinit .noinit.*)
+                0x00000000800060bc                . = ALIGN (0x4)
+
+._user_heap     0x00000000800060bc        0x4
+                0x00000000800060c0                . = ALIGN (0x8)
+ *fill*         0x00000000800060bc        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (_heap_start = .)
+                0x00000000800060c0                . = (. + _heap_size)
+                0x00000000800060c0                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (_heap_end = .)
+
+._stack         0x00000000800060c0      0x400
+                0x00000000800060c0                . = ALIGN (0x10)
+ *fill*         0x00000000800060c0        0x0 
+                [!provide]                        PROVIDE (_stack_end = .)
+                0x00000000800064c0                . = (. + _stack_size)
+ *fill*         0x00000000800060c0      0x400 
+                0x00000000800064c0                . = ALIGN (0x10)
+                0x00000000800064c0                PROVIDE (_stack_start = .)
+OUTPUT(build/dhrystone.elf elf32-littleriscv)
+
+.debug_info     0x0000000000000000     0x6e7e
+ .debug_info    0x0000000000000000      0xc67 build/src/main.o
+ .debug_info    0x0000000000000c67     0x1756 build/src/dhry_1.o
+ .debug_info    0x00000000000023bd      0xc69 build/src/dhry_2.o
+ .debug_info    0x0000000000003026       0x26 build/src/crt.o
+ .debug_info    0x000000000000304c      0x3b6 build/src/stdlib.o
+ .debug_info    0x0000000000003402      0x734 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_info    0x0000000000003b36      0x76c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_info    0x00000000000042a2      0x3bf /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_info    0x0000000000004661      0x3ac /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_info    0x0000000000004a0d      0x351 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_info    0x0000000000004d5e      0x1f7 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_info    0x0000000000004f55      0x25d /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_info    0x00000000000051b2      0x2a9 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_info    0x000000000000545b      0x2e2 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_info    0x000000000000573d      0xbd7 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .debug_info    0x0000000000006314      0xb6a /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_abbrev   0x0000000000000000     0x1cce
+ .debug_abbrev  0x0000000000000000      0x2d0 build/src/main.o
+ .debug_abbrev  0x00000000000002d0      0x357 build/src/dhry_1.o
+ .debug_abbrev  0x0000000000000627      0x2a5 build/src/dhry_2.o
+ .debug_abbrev  0x00000000000008cc       0x14 build/src/crt.o
+ .debug_abbrev  0x00000000000008e0      0x20d build/src/stdlib.o
+ .debug_abbrev  0x0000000000000aed      0x187 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_abbrev  0x0000000000000c74      0x197 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_abbrev  0x0000000000000e0b      0x17a /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_abbrev  0x0000000000000f85      0x17a /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_abbrev  0x00000000000010ff      0x191 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_abbrev  0x0000000000001290      0x18a /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_abbrev  0x000000000000141a      0x198 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_abbrev  0x00000000000015b2      0x17b /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_abbrev  0x000000000000172d      0x177 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_abbrev  0x00000000000018a4      0x242 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000000000001ae6      0x1e8 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_aranges  0x0000000000000000      0x200
+ .debug_aranges
+                0x0000000000000000       0x28 build/src/main.o
+ .debug_aranges
+                0x0000000000000028       0x20 build/src/dhry_1.o
+ .debug_aranges
+                0x0000000000000048       0x20 build/src/dhry_2.o
+ .debug_aranges
+                0x0000000000000068       0x20 build/src/crt.o
+ .debug_aranges
+                0x0000000000000088       0x20 build/src/stdlib.o
+ .debug_aranges
+                0x00000000000000a8       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_aranges
+                0x00000000000000c8       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_aranges
+                0x00000000000000e8       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_aranges
+                0x0000000000000108       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_aranges
+                0x0000000000000128       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_aranges
+                0x0000000000000148       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_aranges
+                0x0000000000000168       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_aranges
+                0x0000000000000188       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_aranges
+                0x00000000000001a8       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_aranges
+                0x00000000000001c8       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000000000001e8       0x18 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_ranges   0x0000000000000000      0x788
+ .debug_ranges  0x0000000000000000       0x18 build/src/main.o
+ .debug_ranges  0x0000000000000018       0xa0 build/src/dhry_1.o
+ .debug_ranges  0x00000000000000b8      0x180 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_ranges  0x0000000000000238      0x1c0 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_ranges  0x00000000000003f8       0xa8 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_ranges  0x00000000000004a0       0xa8 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_ranges  0x0000000000000548      0x140 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_ranges  0x0000000000000688       0x18 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_ranges  0x00000000000006a0       0x50 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_ranges  0x00000000000006f0       0x38 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_ranges  0x0000000000000728       0x40 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_ranges  0x0000000000000768       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_line     0x0000000000000000     0x6307
+ .debug_line    0x0000000000000000      0x443 build/src/main.o
+ .debug_line    0x0000000000000443      0xc79 build/src/dhry_1.o
+ .debug_line    0x00000000000010bc      0x50a build/src/dhry_2.o
+ .debug_line    0x00000000000015c6      0x1e6 build/src/crt.o
+ .debug_line    0x00000000000017ac      0x596 build/src/stdlib.o
+ .debug_line    0x0000000000001d42      0xe35 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_line    0x0000000000002b77      0xbf8 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_line    0x000000000000376f      0x760 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_line    0x0000000000003ecf      0x666 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_line    0x0000000000004535      0x97e /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_line    0x0000000000004eb3      0x207 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_line    0x00000000000050ba      0x2fb /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_line    0x00000000000053b5      0x369 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_line    0x000000000000571e      0x403 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_line    0x0000000000005b21      0x434 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000005f55      0x3b2 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_str      0x0000000000000000     0x1583
+ .debug_str     0x0000000000000000      0x62f build/src/main.o
+                                        0x69d (size before relaxing)
+ .debug_str     0x000000000000062f      0x2a7 build/src/dhry_1.o
+                                        0x80c (size before relaxing)
+ .debug_str     0x00000000000008d6       0xed build/src/dhry_2.o
+                                        0x6b5 (size before relaxing)
+ .debug_str     0x00000000000009c3       0x2c build/src/crt.o
+                                         0x5f (size before relaxing)
+ .debug_str     0x00000000000009ef       0x96 build/src/stdlib.o
+                                        0x226 (size before relaxing)
+ .debug_str     0x0000000000000a85      0x3c7 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+                                        0x44d (size before relaxing)
+ .debug_str     0x0000000000000e4c      0x15f /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                                        0x4a5 (size before relaxing)
+ .debug_str     0x0000000000000fab      0x11a /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+                                        0x3b8 (size before relaxing)
+ .debug_str     0x00000000000010c5       0x6c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+                                        0x373 (size before relaxing)
+ .debug_str     0x0000000000001131      0x109 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+                                        0x34e (size before relaxing)
+ .debug_str     0x000000000000123a       0x57 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+                                        0x290 (size before relaxing)
+ .debug_str     0x0000000000001291       0x6d /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+                                        0x319 (size before relaxing)
+ .debug_str     0x00000000000012fe       0x51 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                                        0x2c6 (size before relaxing)
+ .debug_str     0x000000000000134f       0x42 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                                        0x324 (size before relaxing)
+ .debug_str     0x0000000000001391      0x1f2 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                                        0x829 (size before relaxing)
+ .debug_str     0x0000000000001583      0x80c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.comment        0x0000000000000000       0x28
+ .comment       0x0000000000000000       0x28 build/src/main.o
+                                         0x29 (size before relaxing)
+ .comment       0x0000000000000028       0x29 build/src/dhry_1.o
+ .comment       0x0000000000000028       0x29 build/src/dhry_2.o
+ .comment       0x0000000000000028       0x29 build/src/stdlib.o
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .comment       0x0000000000000028       0x29 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.riscv.attributes
+                0x0000000000000000       0x21
+ .riscv.attributes
+                0x0000000000000000       0x21 build/src/main.o
+ .riscv.attributes
+                0x0000000000000021       0x21 build/src/dhry_1.o
+ .riscv.attributes
+                0x0000000000000042       0x21 build/src/dhry_2.o
+ .riscv.attributes
+                0x0000000000000063       0x1f build/src/crt.o
+ .riscv.attributes
+                0x0000000000000082       0x21 build/src/stdlib.o
+ .riscv.attributes
+                0x00000000000000a3       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-memcpy.o)
+ .riscv.attributes
+                0x00000000000000c4       0x1f /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32im/ilp32/libc.a(lib_a-strcmp.o)
+ .riscv.attributes
+                0x00000000000000e3       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .riscv.attributes
+                0x0000000000000104       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .riscv.attributes
+                0x0000000000000125       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .riscv.attributes
+                0x0000000000000146       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .riscv.attributes
+                0x0000000000000167       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .riscv.attributes
+                0x0000000000000188       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .riscv.attributes
+                0x00000000000001a9       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .riscv.attributes
+                0x00000000000001ca       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .riscv.attributes
+                0x00000000000001eb       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .riscv.attributes
+                0x000000000000020c       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .riscv.attributes
+                0x000000000000022d       0x21 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clz.o)
+
+.debug_frame    0x0000000000000000      0x56c
+ .debug_frame   0x0000000000000000       0x7c build/src/main.o
+ .debug_frame   0x000000000000007c       0xe0 build/src/dhry_1.o
+ .debug_frame   0x000000000000015c       0xb4 build/src/dhry_2.o
+ .debug_frame   0x0000000000000210      0x114 build/src/stdlib.o
+ .debug_frame   0x0000000000000324       0x54 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_frame   0x0000000000000378       0x54 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_frame   0x00000000000003cc       0x4c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_frame   0x0000000000000418       0x48 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_frame   0x0000000000000460       0x3c /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_frame   0x000000000000049c       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_frame   0x00000000000004bc       0x38 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_frame   0x00000000000004f4       0x38 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_frame   0x000000000000052c       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_frame   0x000000000000054c       0x20 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.debug_loc      0x0000000000000000     0x49f0
+ .debug_loc     0x0000000000000000      0x27e build/src/dhry_1.o
+ .debug_loc     0x000000000000027e      0x45e build/src/dhry_2.o
+ .debug_loc     0x00000000000006dc      0x19f build/src/stdlib.o
+ .debug_loc     0x000000000000087b     0x129b /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divdf3.o)
+ .debug_loc     0x0000000000001b16      0xd6e /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .debug_loc     0x0000000000002884      0x758 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(divsf3.o)
+ .debug_loc     0x0000000000002fdc      0x5e4 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(mulsf3.o)
+ .debug_loc     0x00000000000035c0      0xbdf /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(subsf3.o)
+ .debug_loc     0x000000000000419f      0x12d /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(fixsfsi.o)
+ .debug_loc     0x00000000000042cc      0x1ac /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(floatsisf.o)
+ .debug_loc     0x0000000000004478      0x1a4 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .debug_loc     0x000000000000461c      0x369 /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .debug_loc     0x0000000000004985       0x6b /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32im/ilp32/libgcc.a(_clzsi2.o)

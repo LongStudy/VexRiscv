@@ -7,11 +7,19 @@ import vexriscv.{VexRiscv, VexRiscvConfig, plugin}
 /**
  * Created by spinalvm on 15.06.17.
  */
-object GenCustomSimdAdd extends App{
+object GenCustomLowBits extends App{
   def cpu() = new VexRiscv(
     config = VexRiscvConfig(
       plugins = List(
-        new SimdAddPlugin,
+        new LowHalfWordsBasePlugin,
+        new LowHalfWordsMultPlugin,
+        new LowBytesBasePlugin,
+        new LowBytesMultPlugin,
+        new LowNibblesBasePlugin,
+        new LowNibblesMultPlugin,
+        new LowCrumbsBasePlugin,
+        new LowCrumbsMultPlugin,
+        new LowConcatPlugin,
         new IBusSimplePlugin(
           resetVector = 0x80000000l,
           cmdForkOnSecondStage = false,

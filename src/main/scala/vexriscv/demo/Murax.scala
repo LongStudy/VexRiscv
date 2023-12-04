@@ -55,8 +55,8 @@ case class MuraxConfig(coreFrequency : HertzNumber,
 object MuraxConfig{
   def default : MuraxConfig = default(false, false)
   def default(withXip : Boolean = false, bigEndian : Boolean = false) =  MuraxConfig(
-    coreFrequency         = 12 MHz,
-    onChipRamSize         = 8 kB,
+    coreFrequency         = 100 MHz,
+    onChipRamSize         = 32 kB,
     onChipRamHexFile      = null,
     pipelineDBus          = true,
     pipelineMainBus       = false,
@@ -123,7 +123,7 @@ object MuraxConfig{
         postSamplingSize  = 1
       ),
       initConfig = UartCtrlInitConfig(
-        baudrate = 115200,
+        baudrate = 1000000,
         dataLength = 7,  //7 => 8 bits
         parity = UartParityType.NONE,
         stop = UartStopType.ONE
@@ -431,7 +431,7 @@ object Murax_iCE40_hx8k_breakout_board_xip{
 
       val led = out Bits(8 bits)
     }
-    val murax = Murax(MuraxConfig.default(withXip = true).copy(onChipRamSize = 8 kB))
+    val murax = Murax(MuraxConfig.default(withXip = true).copy(onChipRamSize = 32 kB))
     murax.io.asyncReset := False
 
     val mainClkBuffer = SB_GB()
@@ -533,6 +533,105 @@ object Murax_arty{
   }
 }
 
+object Murax_Dhrystone{
+  def main(args: Array[String]) {
+    val hex = "src/main/c/murax/dhrystone_rv32i/build/dhrystone_rv32i.hex"
+    SpinalVerilog(Murax(MuraxConfig.default(false).copy(onChipRamSize = 32 kB, onChipRamHexFile = hex)))
+  }
+}
+
+object Murax_Coremark{
+  def main(args: Array[String]) {
+    val hex = "src/main/c/murax/coremark_rv32i/build/coremark_rv32i.hex"
+    SpinalVerilog(Murax(MuraxConfig.default(false).copy(onChipRamSize = 32 kB, onChipRamHexFile = hex)))
+  }
+}
+
+object Murax_MNIST{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/MNIST/build/mnist.hex"
+    SpinalVerilog(Murax(MuraxConfig.default(false).copy(onChipRamSize = 100 kB, onChipRamHexFile = hex)))
+  }
+}
+
+object Murax_CIFAR{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/CIFAR/build/cifar.hex"
+    SpinalVerilog(Murax(MuraxConfig.default(false).copy(onChipRamSize = 200 kB, onChipRamHexFile = hex)))
+  }
+}
+
+object Murax_VWW{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/VWW/build/vww.hex"
+    SpinalVerilog(Murax(MuraxConfig.default(false).copy(onChipRamSize = 400 kB, onChipRamHexFile = hex)))
+  }
+}
+
+object Murax_LowBytes_Dhrystone{
+  def main(args: Array[String]) {
+    val hex = "src/main/c/murax/dhrystone_rv32i/build/dhrystone_rv32i.hex"
+    SpinalVerilog({
+      val config = MuraxConfig.default(false).copy(onChipRamSize = 32 kB, onChipRamHexFile = hex)
+      // config.cpuPlugins += new LowBytesBasePlugin
+      config.cpuPlugins += new LowBytesMultPlugin
+      config.cpuPlugins += new LowConcatPlugin
+      Murax(config)
+    })
+  }
+}
+
+object Murax_LowBytes_Coremark{
+  def main(args: Array[String]) {
+    val hex = "src/main/c/murax/coremark_rv32i/build/coremark_rv32i.hex"
+    SpinalVerilog({
+      val config = MuraxConfig.default(false).copy(onChipRamSize = 32 kB, onChipRamHexFile = hex)
+      // config.cpuPlugins += new LowBytesBasePlugin
+      config.cpuPlugins += new LowBytesMultPlugin
+      config.cpuPlugins += new LowConcatPlugin
+      Murax(config)
+    })
+  }
+}
+
+object Murax_LowBytes_MNIST{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/MNIST/build/mnist.hex"
+    SpinalVerilog({
+      val config = MuraxConfig.default(false).copy(onChipRamSize = 100 kB, onChipRamHexFile = hex)
+      // config.cpuPlugins += new LowBytesBasePlugin
+      config.cpuPlugins += new LowBytesMultPlugin
+      config.cpuPlugins += new LowConcatPlugin
+      Murax(config)
+    })
+  }
+}
+
+object Murax_LowBytes_CIFAR{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/CIFAR/build/cifar.hex"
+    SpinalVerilog({
+      val config = MuraxConfig.default(false).copy(onChipRamSize = 200 kB, onChipRamHexFile = hex)
+      // config.cpuPlugins += new LowBytesBasePlugin
+      config.cpuPlugins += new LowBytesMultPlugin
+      config.cpuPlugins += new LowConcatPlugin
+      Murax(config)
+    })
+  }
+}
+
+object Murax_LowBytes_VWW{
+  def main(args: Array[String]) {
+    val hex = "/root/VexRiscvSocSoftware/projects/murax/VWW/build/vww.hex"
+    SpinalVerilog({
+      val config = MuraxConfig.default(false).copy(onChipRamSize = 400 kB, onChipRamHexFile = hex)
+      // config.cpuPlugins += new LowBytesBasePlugin
+      config.cpuPlugins += new LowBytesMultPlugin
+      config.cpuPlugins += new LowConcatPlugin
+      Murax(config)
+    })
+  }
+}
 
 object MuraxAsicBlackBox extends App{
   println("Warning this soc do not has any rom to boot on.")

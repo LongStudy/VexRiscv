@@ -5,7 +5,7 @@ if {![info exists mmi_file]} {
      set mmi_file "soc.mmi"
 }
 if {![info exists part]} {
-    set part     "xc7a35ticsg324-1L"
+    set part     "xc7a100tcsg324-1"
 }
 
 # Function to swap bits
@@ -57,8 +57,8 @@ if { [expr {[llength $rams] % 4}] != 0 } {
 set size_bytes [expr {4096*[llength $rams]}]
 puts "Instruction memory size $size_bytes"
 
-# Currently only support memory sizes between 16kB, (one byte per mem), and 128kB, (one bit per mem)
-if { ($size_bytes < (4*4096)) || ($size_bytes > (32*4096)) } {
+# Currently only support memory sizes between 16kB, (one byte per mem), and 768kB, (one bit per mem)
+if { ($size_bytes < (4*4096)) || ($size_bytes > (192*4096)) } {
     puts "Error - Memory size of $size_bytes out of range"
     puts "        Script only supports memory sizes between 16kB and 128kB"
     return -1
@@ -80,6 +80,10 @@ puts $fp "            <BusBlock>"
 
 # Calculate the expected number of bits per memory
 set mem_bits [expr {32/[llength $rams]}]
+
+if { $mem_bits == 0 } {
+    set mem_bits 1
+}
 
 puts "mem_bits = $mem_bits"
 

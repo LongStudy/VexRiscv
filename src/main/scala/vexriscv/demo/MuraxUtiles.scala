@@ -145,7 +145,7 @@ class MuraxApb3Timer extends Component{
     val interrupt = out Bool()
   }
 
-  val prescaler = Prescaler(16)
+  val prescaler = Prescaler(32)
   val timerA,timerB = Timer(16)
 
   val busCtrl = Apb3SlaveFactory(io.apb)

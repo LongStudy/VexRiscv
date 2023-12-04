@@ -20,7 +20,7 @@ SIFIVE_GCC_PACK ?= yes
 
 ifeq ($(SIFIVE_GCC_PACK),yes)
 	RISCV_NAME ?= riscv64-unknown-elf
-	RISCV_PATH ?= /opt/riscv/
+	RISCV_PATH ?= /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/
 else
 	RISCV_NAME ?= riscv32-unknown-elf
 	ifeq ($(MULDIV),yes)
@@ -36,7 +36,7 @@ ifeq ($(MULDIV),yes)
 	MARCH := $(MARCH)m
 endif
 ifeq ($(COMPRESSED),yes)
-	MARCH := $(MARCH)ac
+	MARCH := $(MARCH)c
 endif
 
 CFLAGS += -march=$(MARCH)  -mabi=$(MABI) -DNDEBUG
@@ -52,7 +52,7 @@ ifeq ($(DEBUG),yes)
 endif
 
 ifeq ($(DEBUG),no)
-	CFLAGS += -g -Os
+	CFLAGS += -O3
 endif
 
 ifeq ($(BENCH),yes)

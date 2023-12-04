@@ -4404,6 +4404,25 @@ int main(int argc, char **argv, char **env) {
 			redo(REDO,WorkspaceRegression("custom_csr").loadHex(string(REGRESSION_PATH) + "../custom/custom_csr/build/custom_csr.hex")->bootAt(0x00000000u)->run(50e3););
 		#endif
 
+		#ifdef CUSTOM_LOWHALFWORDS
+			redo(REDO,WorkspaceRegression("LowHalfWords").loadHex(string(REGRESSION_PATH) + "../custom/LowHalfWords/build/custom_LowHalfWords.hex")->bootAt(0x00000000u)->run(50e3););
+		#endif
+
+		#ifdef CUSTOM_LOWBYTES
+			redo(REDO,WorkspaceRegression("LowBytes").loadHex(string(REGRESSION_PATH) + "../custom/LowBytes/build/custom_LowBytes.hex")->bootAt(0x00000000u)->run(50e3););
+		#endif
+
+		#ifdef CUSTOM_LOWNIBBLES
+			redo(REDO,WorkspaceRegression("LowNibbles").loadHex(string(REGRESSION_PATH) + "../custom/LowNibbles/build/custom_LowNibbles.hex")->bootAt(0x00000000u)->run(50e3););
+		#endif
+
+		#ifdef CUSTOM_LOWCRUMBS
+			redo(REDO,WorkspaceRegression("LowCrumbs").loadHex(string(REGRESSION_PATH) + "../custom/LowCrumbs/build/custom_LowCrumbs.hex")->bootAt(0x00000000u)->run(50e3););
+		#endif
+
+		#ifdef CUSTOM_LOWCONCAT
+			redo(REDO,WorkspaceRegression("LowConcat").loadHex(string(REGRESSION_PATH) + "../custom/LowConcat/build/custom_LowConcat.hex")->bootAt(0x00000000u)->run(50e3););
+		#endif
 
 		#ifdef LRSC
 			redo(REDO,WorkspaceRegression("lrsc").withRiscvRef()->loadHex(string(REGRESSION_PATH) + "../raw/lrsc/build/lrsc.hex")->bootAt(0x00000000u)->run(10e3););

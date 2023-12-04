@@ -52,3 +52,23 @@ simWorkspace/
 tmp/
 /archive.tar.gz
 *.out32
+
+.bloop/
+.metals/
+project/
+# murax build files
+scripts/Murax/*arty_a7/build/
+scripts/Murax/*arty_a7/*.jou
+scripts/Murax/*arty_a7/*.str
+scripts/Murax/*arty_a7/*project/
+# instruction test
+src/test/cpp/custom/simd*
+src/test/cpp/custom/LowBytes/build/src/
+src/test/cpp/custom/LowNibbles/build/src/
+src/test/cpp/custom/LowCrumbs/build/src/
+src/test/cpp/custom/LowHalfWords/build/src/
+src/test/cpp/custom/LowConcat/build/src/
+# hex and elf files
+src/main/c/murax/hello_world/build/
+# low bytes test
+trashbin/

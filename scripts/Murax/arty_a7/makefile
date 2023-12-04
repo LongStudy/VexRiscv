@@ -9,12 +9,13 @@ TOP=Murax
 all : build/latest.bit
 
 ../../../$(TOP).v : toplevel.v
-	(cd ../../..; sbt "runMain vexriscv.demo.Murax_arty")
+
+$(info INFO: You should gen $(TOP).v first: cd ../../..; sbt "runMain vexriscv.demo.xxxxxx")
 
 .PHONY: $(SOCMEMSRC)
 $(SOCMEMSRC):
-	mkdir -p build
-	make -C $(SWBASE)/$(SOCSW)
+#	mkdir -p build
+#	make -C $(SWBASE)/$(SOCSW)
 
 $(SOCMEM) : $(SOCMEMSRC)
 	cp -u $(SOCMEMSRC) $(SOCMEM)
